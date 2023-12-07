@@ -9,7 +9,7 @@ const NavbarItem = ({ title, param }) => {
     const genre = searchParam.get('genre')
 
     return (
-        <Link className={`lg:text-lg hover:text-amber-600 font-semibold ${genre && genre == param && 'border-b-4 border-amber-500 rounded'}`} href={`?genre=${param}`}>{title}</Link>
+        <Link className={`lg:text-lg hover:text-amber-600 font-semibold ${genre && genre == param && 'border-b-4 border-amber-500 rounded'}`} href={`/?genre=${param}`}>{title}</Link>
     )
 }
 
