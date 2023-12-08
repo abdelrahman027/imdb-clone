@@ -20,7 +20,7 @@ export default async function Home({ searchParams }) {
 
 
   return (
-    <main >
+    <main className="py-8 px-4" >
       <Results results={results} />
     </main >
   )
