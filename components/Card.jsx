@@ -4,7 +4,6 @@ import React from 'react'
 import { FiThumbsUp } from 'react-icons/fi'
 
 const Card = ({ result }) => {
-    console.log(result)
     return (
         <div className='p-2 rounded-lg border border-slate-400 group cursor-pointer shadow-slate-400 dark:shadow-slate-100 hover:shadow-md transition-shadow duration-200'>
             <Link href={`/movie/${result.id}`} >

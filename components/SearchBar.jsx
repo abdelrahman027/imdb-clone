@@ -5,7 +5,6 @@ import React, { useState } from 'react'
 const SearchBar = () => {
     const [search, setSearch] = useState("")
     const router = useRouter();
-    console.log(router)
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!search) return;
