@@ -28,11 +28,11 @@ const MoviePage = async ({ params }) => {
                     <div>
                         <p className='flex gap-1 items-center'><IoIosStar className='text-amber-400 w-5 h-5' /> {movie.vote_average.toFixed(1)} <span className='text-xs opacity-50'>{movie.vote_count} voted </span></p>
 
+
                     </div>
 
                     <p className='text-sm opacity-50'>
-                        {movie.adult ? 'Adult Content' : 'Family Friendly'}
-
+                        {movie.adult || movie.adult == 'true' ? 'Adult Content' : 'Family Friendly'}
                     </p>
                 </div>
                 <h2 className='text-2xl pb-2 font-semibold'>{movie.title || movie.name}</h2>
